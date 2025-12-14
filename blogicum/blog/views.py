@@ -1,15 +1,19 @@
 from django.shortcuts import render
 
-# Create your views here.
+
 def index(request):
     reversed_posts = posts[::-1]
     return render(request, 'blog/index.html', {'posts': reversed_posts})
 
+
 def post_detail(request, post_id=0):
     return render(request, 'blog/detail.html', {'post': posts[post_id]})
 
+
 def category_posts(request, category_slug=''):
-    return render(request, 'blog/category.html', {'category_slug': category_slug})
+    context = {'category_slug': category_slug}
+    return render(request, 'blog/category.html', context)
+
 
 posts = [
     {
