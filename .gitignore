@@ -151,4 +151,11 @@ media/
 # Testing
 build_tests/
 yap_testing
-html/img/img/
+blogicum/static_dev/img/img/
+/my_venv/
+blogicum/.env
+blogicum/db.sqlite3
+blogicum/blog/__init__.py
+blogicum/blog/migrations/__init__.py
+blogicum/blogicum/__init__.py
+blogicum/pages/migrations/__init__.py
